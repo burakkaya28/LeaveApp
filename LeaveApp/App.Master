@@ -1,0 +1,332 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="App.Master.cs" Inherits="DemoWebApp.Site1" %>
+<%@ Import Namespace="Resources" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>OPTiiM | Leave App</title>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel ="shortcut icon" type="image/x-icon" href="images/schedule.png" />
+        
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link href="plugins/datatables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" />
+
+    <link href="bootstrap/datatimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css" />
+    <link rel="stylesheet" href="plugins/iCheck/all.css" />
+    <link rel="stylesheet" href="plugins/colorpicker/bootstrap-colorpicker.min.css" />
+    <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" href="plugins/select2/select2.min.css"/>
+    <link href="bootstrap/css/jquery.datetimepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
+    
+    <link rel="stylesheet" href="dist/css/custom1.css" />
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css" />
+    <link href="bootstrap/css/jquery.datetimepicker.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="dist/js/html5shiv.min.js"></script>
+      <script src="dist/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="sidebar-mini wysihtml5-supported skin-black-light">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="Dashboard" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>OPT<span style="color: gray;">ii</span>M</b></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>OPT<span style="color: gray;">ii</span>M</b></span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                  
+                    <div class="navbar-custom-menu">
+                          <ul class="nav navbar-nav">
+                               <li class="dropdown user user-menu top2">
+                                 <a href="#" class="dropdown-toggle">
+                                 <asp:ImageButton ID="l_turkish" ImageUrl="~/dist/img/turkey.png" class="user-image"  style="margin-left:5px" alt="User Image" runat="server" OnClick="l_turkish_Click" />
+                                 <span class="hidden-xs">&nbsp</span>
+                                 <asp:ImageButton ID="l_english" ImageUrl="~/dist/img/english.png" class="user-image"  alt="User Image" runat="server" OnClick="l_english_Click" />
+                                
+                                </a>
+                               </li>   
+                           </ul>
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
+                                    <span class="hidden-xs"><%=MyName %></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+
+                                        <p><%=MyName %></p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-right">
+                                            <asp:Button class="btn btn-default btn-flat" ID="LoginBtn" OnClick="LoginStatus1_LoggedOut" runat="server" Text="<%$ Resources:Global, LogoutText %>" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info" style="width: 75%; text-overflow: ellipsis; overflow: hidden;">
+                            <p><%=MyName%></p>
+                            <span title="<%=Role%>"><%=Role%></span>
+                        </div>
+                    </div>
+                    <!-- search form
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                        </asp:ContentPlaceHolder>
+
+
+
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="Dashboard"><i class="fa fa-dashboard"></i><%=Global.Default_homepage %></a></li>
+                        <li class="active">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+              <%=Global.Default_copyright %>
+            </footer>
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Create the tabs -->
+                <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                    <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+                </ul>
+                <!-- Tab panes -->
+            </aside>
+            <!-- /.control-sidebar -->
+            <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+            <div class="control-sidebar-bg"></div>
+        </div>
+
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" />
+        <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/locale/en-gb.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+        <script>
+            $('.datetimepicker').datetimepicker().on('dp.change', function (e) {
+                if (!e.oldDate || !e.date.isSame(e.oldDate, 'day')) {
+                    $(this).data('DateTimePicker').hide();
+                }
+            });
+        </script>
+
+        <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="plugins/select2/select2.full.min.js"></script>
+        <script src="plugins/input-mask/jquery.inputmask.js"></script>
+        <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+        <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+        <script src="plugins/daterangepicker/daterangepicker.js"></script>
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+        <script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+        <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+        <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="plugins/iCheck/icheck.min.js"></script>
+        <script src="plugins/fastclick/fastclick.js"></script>
+        <script src="dist/js/app.min.js"></script>
+        <script src="dist/js/demo.js"></script>
+
+        <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+        <script> $(".timepicker").timepicker({showInputs: false });</script>
+
+        <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.datetimepicker.full.min.js"></script>
+      
+        <script src="bootstrap/datatimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script>
+            $(function () {
+                $("#example1").DataTable();
+                $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": false,
+                    "ordering": false,
+                    "info": true,
+                    "autoWidth": false
+                });
+
+            });
+        </script>
+         <script>
+             $('#datepicker').datepicker({
+                 autoclose: true,
+                 weekStart: 1,
+                 daysOfWeekDisabled: [0, 6]
+             });
+
+             $('#datepicker2').datepicker({
+                 autoclose: true,
+                 weekStart: 1,
+                 daysOfWeekDisabled: [0, 6]
+             });
+
+             $("#datepicker3").datepicker({
+                 format: "yyyy-mm-dd",
+                 autoclose: true,
+                 weekStart: 1
+             });
+
+             $("#datepicker4").datepicker({
+                 format: "yyyy-mm-dd",
+                 autoclose: true,
+                 weekStart: 1
+             });
+
+             $("#dateStartDate").datepicker({
+                 autoclose: true,
+                 weekStart: 1
+             });
+
+             $("#leaveDate").datepicker({
+                 autoclose: true,
+                 weekStart: 1,
+                 daysOfWeekDisabled: [0, 6]
+             });
+
+         </script>
+         <script>
+
+            $(function () {
+
+                var leaveDurationObject = document.getElementById("AllowLeaveDurationForBefore");
+                if (typeof(leaveDurationObject) != 'undefined' && leaveDurationObject != null)
+                {
+                    var days = leaveDurationObject.value;
+                    var today = new Date();
+                    var startDate = new Date(today.getTime() - (days * 24 * 60 * 60 * 1000));
+
+                    var dd = startDate.getDate();
+                    var mm = startDate.getMonth() + 1;
+                    var yyyy = startDate.getFullYear();
+
+                    if (dd < 10) { dd = '0' + dd; }
+                    if (mm < 10) { mm = '0' + mm; }
+
+                    today = dd + '/' + mm + '/' + yyyy;
+
+                    $('#datepicker').datepicker('setStartDate', today);
+                    $('#datepicker2').datepicker('setStartDate', today);
+
+                    $("#datepicker").datepicker({
+                        startDate: startDate,
+                        autoclose: true
+                    }).on('changeDate', function (selected) {
+                        var minDate = new Date(selected.date.valueOf());
+                        $('#datepicker2').datepicker('setStartDate', minDate);
+                        $('#datepicker2').datepicker('setDate', minDate);
+                    });
+                }
+            });
+        </script>
+
+        <script type="text/javascript">
+            function Clicking(sender, args) {
+                args.set_cancel(!window.confirm("Are you sure?"));
+            }
+        </script>
+        <script>
+            $(function () {
+                $('#AllRequest').DataTable({
+                    "paging": true,
+                    "lengthChange": true,
+                    "searching": false,
+                    "ordering": true,
+                    "info": false,
+                    "autoWidth": false,
+                    "orderMulti": true
+                });
+
+            });
+        </script>
+        
+    </form>
+</body>
+</html>

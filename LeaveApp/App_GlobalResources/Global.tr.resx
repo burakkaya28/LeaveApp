@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add_btn" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Add_input1" xml:space="preserve">
+    <value>İsim Soyisim</value>
+  </data>
+  <data name="Add_input2" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="Add_input3" xml:space="preserve">
+    <value>Eposta</value>
+  </data>
+  <data name="Add_input4" xml:space="preserve">
+    <value>Rol Seçiniz</value>
+  </data>
+  <data name="Add_input5" xml:space="preserve">
+    <value>Yetkili Yönetici Seçiniz</value>
+  </data>
+  <data name="Add_tbl_h1" xml:space="preserve">
+    <value>Kullanıcı No</value>
+  </data>
+  <data name="Add_tbl_h2" xml:space="preserve">
+    <value>Yönetici Adı</value>
+  </data>
+  <data name="Add_tbl_h3" xml:space="preserve">
+    <value>Personeller</value>
+  </data>
+  <data name="ExportToExcelText" xml:space="preserve">
+    <value>Excel'e Aktar</value>
+  </data>
+  <data name="AllRequest_title" xml:space="preserve">
+    <value>Tüm İzin Talepleri</value>
+  </data>
+  <data name="Confirmation_tbl_th1" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Default_approvals_table_th1" xml:space="preserve">
+    <value>İzin No</value>
+  </data>
+  <data name="Default_approvals_table_th2" xml:space="preserve">
+    <value>Kişi</value>
+  </data>
+  <data name="Default_approvals_table_th3" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="Default_approvals_table_th4" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="Default_approvals_table_th5" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="Default_copyright" xml:space="preserve">
+    <value>&lt;strong&gt;Telif Hakkı &amp;copy; 2017 &lt;a href="http://optiim.com"&gt;OPTiiM&lt;/a&gt;.&lt;/strong&gt; Tüm hakları saklıdır.</value>
+  </data>
+  <data name="Default_homepage" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="Default_request_table_title" xml:space="preserve">
+    <value>İzin Taleplerim</value>
+  </data>
+  <data name="Details_input1" xml:space="preserve">
+    <value>Onayla</value>
+  </data>
+  <data name="Details_input2" xml:space="preserve">
+    <value>Reddet</value>
+  </data>
+  <data name="Details_input3" xml:space="preserve">
+    <value>İptal Et</value>
+  </data>
+  <data name="Details_title" xml:space="preserve">
+    <value>İzin Detayı</value>
+  </data>
+  <data name="Login_btn" xml:space="preserve">
+    <value>Google ile giriş yap</value>
+  </data>
+  <data name="Login_language_en" xml:space="preserve">
+    <value>İngilizce</value>
+  </data>
+  <data name="Login_language_en_value" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="Login_language_lbl" xml:space="preserve">
+    <value>Dil Seçimi</value>
+  </data>
+  <data name="Login_language_tr" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  <data name="Login_language_tr_value" xml:space="preserve">
+    <value>tr</value>
+  </data>
+  <data name="Login_lbl" xml:space="preserve">
+    <value>Giriş yapmak için oturum açın</value>
+  </data>
+  <data name="Login_title" xml:space="preserve">
+    <value>OPTiiM İzinApp</value>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>Çıkış Yap</value>
+  </data>
+  <data name="Menu_all" xml:space="preserve">
+    <value>Tüm İzinler</value>
+  </data>
+  <data name="Menu_approvals" xml:space="preserve">
+    <value>Onay Bekleyen İzinler</value>
+  </data>
+  <data name="Menu_dashboard" xml:space="preserve">
+    <value>Gösterge Paneli</value>
+  </data>
+  <data name="Menu_reports" xml:space="preserve">
+    <value>Raporlar</value>
+  </data>
+  <data name="Menu_reports_li1" xml:space="preserve">
+    <value>Onaylanan İzinler</value>
+  </data>
+  <data name="Menu_reports_li2" xml:space="preserve">
+    <value>Reddedilen İzinler</value>
+  </data>
+  <data name="Menu_reports_li3" xml:space="preserve">
+    <value>Kişi Bazlı İzinler</value>
+  </data>
+  <data name="Menu_reports_li4" xml:space="preserve">
+    <value>Tarihler Arası Alınan İzinler</value>
+  </data>
+  <data name="Menu_request" xml:space="preserve">
+    <value>İzin Talebi</value>
+  </data>
+  <data name="Menu_staff" xml:space="preserve">
+    <value>Kullanıcı Ekle</value>
+  </data>
+  <data name="Report_tbl_th1" xml:space="preserve">
+    <value>Toplam İzin</value>
+  </data>
+  <data name="Report_tbl_th2" xml:space="preserve">
+    <value>Ünvan</value>
+  </data>
+  <data name="Report_title" xml:space="preserve">
+    <value>Kişi Bazlı Toplam İzin Talepleri</value>
+  </data>
+  <data name="Request_btn" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="Request_drop" xml:space="preserve">
+    <value>Başlangıç Saati</value>
+  </data>
+  <data name="Request_drop1" xml:space="preserve">
+    <value>Bitiş Saati</value>
+  </data>
+  <data name="Request_drop2" xml:space="preserve">
+    <value>Seçiniz</value>
+  </data>
+  <data name="Request_file" xml:space="preserve">
+    <value>Dosya Ekle</value>
+  </data>
+  <data name="Request_form_title" xml:space="preserve">
+    <value>İzin Talep Formu</value>
+  </data>
+  <data name="Request_href1" xml:space="preserve">
+    <value>Yarım Gün Ekle</value>
+  </data>
+  <data name="Request_href2" xml:space="preserve">
+    <value>Rapor Ekle</value>
+  </data>
+  <data name="Request_input1" xml:space="preserve">
+    <value>Oluşturan</value>
+  </data>
+  <data name="Request_input2" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="Request_input3" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="Request_input4" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="Request_lbl" xml:space="preserve">
+    <value>İzin Açıklaması</value>
+  </data>
+  <data name="Request_msj" xml:space="preserve">
+    <value>YILLIK İZİN TAAHHÜTNAMESİ</value>
+  </data>
+  <data name="Request_msj1" xml:space="preserve">
+    <value>&lt;p&gt;
+                                                    Optiim Yazılım Hizmetleri A.Ş.’ne / Optiim İş Çözümleri A.Ş'ne
+
+ ----- ve ----- tarihleri arasında henüz haketmediğim yıllık iznime mahsuben ---- gün izin kullanmak istiyorum. Sözkonusu avans izin günlerimin iş sözleşmenin herhangi bir nedenle sona ermesi halinde tarafıma yapılacak herhangi bir ödemeden mahsup edilmesine şimdiden muvafakat ediyorum."
+
+&lt;/p&gt;</value>
+  </data>
+  <data name="Request_msj2" xml:space="preserve">
+    <value>Sözleşmeyi Okuyunuz.</value>
+  </data>
+  <data name="Request_msj3" xml:space="preserve">
+    <value>Okudum Kabul Ediyorum</value>
+  </data>
+  <data name="Request_tbl_td1" xml:space="preserve">
+    <value>Onaylandı</value>
+  </data>
+  <data name="Request_tbl_td2" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="Request_tbl_td3" xml:space="preserve">
+    <value>Beklemede</value>
+  </data>
+  <data name="Request_tbl_td4" xml:space="preserve">
+    <value>İptal Edildi</value>
+  </data>
+  <data name="TwoDates_btn" xml:space="preserve">
+    <value>İzinleri Göster</value>
+  </data>
+  <data name="TwoDates_title" xml:space="preserve">
+    <value>Tarihler Arası Alınan İzinler</value>
+  </data>
+  <data name="UserEdit_input" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="UserEdit_input1" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="UserEdit_input2" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="UserEdit_msj" xml:space="preserve">
+    <value>Kullanıcı Bilgilerini Güncelle</value>
+  </data>
+  <data name="Add_input6" xml:space="preserve">
+    <value>İkinci Yöneticiyi Seçiniz</value>
+  </data>
+  <data name="UserEdit_input3" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="UserEdit_input4" xml:space="preserve">
+    <value>İkinci Yönetici</value>
+  </data>
+  <data name="UserEdit_input5" xml:space="preserve">
+    <value>Ünvan</value>
+  </data>
+  <data name="Request_input5" xml:space="preserve">
+    <value>İzin Türü</value>
+  </data>
+  <data name="Default_leave_table_th1" xml:space="preserve">
+    <value>Kullanıcı No</value>
+  </data>
+  <data name="Default_leave_table_th2" xml:space="preserve">
+    <value>Çalışma Yılı</value>
+  </data>
+  <data name="Default_leave_table_th3" xml:space="preserve">
+    <value>Toplam İzin Hakkı</value>
+  </data>
+  <data name="Default_leave_table_th4" xml:space="preserve">
+    <value>Toplam Kullanılan İzin</value>
+  </data>
+  <data name="Default_leave_table_th5" xml:space="preserve">
+    <value>Toplam Kalan İzin</value>
+  </data>
+  <data name="Default_leave_table_th6" xml:space="preserve">
+    <value>İzin Durumum</value>
+  </data>
+  <data name="Default_leave_table_th7" xml:space="preserve">
+    <value>İzin Özeti</value>
+  </data>
+  <data name="Request_lbl1" xml:space="preserve">
+    <value>İzin Süresi (Gün)</value>
+  </data>
+  <data name="Request_lbl2" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="Request_chkbox" xml:space="preserve">
+    <value>Varolan izine yarım gün ekler.</value>
+  </data>
+  <data name="Request_chkbox1" xml:space="preserve">
+    <value>Yarım gün izin alınmasını sağlar.</value>
+  </data>
+  <data name="Request_href3" xml:space="preserve">
+    <value>Yarım Gün</value>
+  </data>
+  <data name="Menu_management" xml:space="preserve">
+    <value>Yönetim</value>
+  </data>
+  <data name="Default_approvals_table_th6" xml:space="preserve">
+    <value>Onay Beklenen Onaycı</value>
+  </data>
+  <data name="Default_approvals_table_th7" xml:space="preserve">
+    <value>Onay Seviyesi</value>
+  </data>
+  <data name="Add_tbl_h4" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="Add_tbl_h5" xml:space="preserve">
+    <value>Pasif</value>
+  </data>
+  <data name="Default_leave_table_WorkStartDate" xml:space="preserve">
+    <value>İş Başlangıç Tarihi</value>
+  </data>
+  <data name="PendingApprovalHasData" xml:space="preserve">
+    <value>Onaylanacak izin bulunmamaktadır.</value>
+  </data>
+  <data name="myLeaveHasData" xml:space="preserve">
+    <value>Görüntülenecek izin bulunmamaktadır.</value>
+  </data>
+  <data name="Menu_UserManagement" xml:space="preserve">
+    <value>Kullanıcılar</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Kullanıcı Ekle</value>
+  </data>
+  <data name="LeaveDescription" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="UserActivate" xml:space="preserve">
+    <value>Aktif Et</value>
+  </data>
+  <data name="ManagerText" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="RoleText" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="SecondManagerText" xml:space="preserve">
+    <value>İkinci Yönetici</value>
+  </data>
+  <data name="UserStartDate" xml:space="preserve">
+    <value>İşe Giriş Tarihi</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="Menu_RoleManagement" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>Rol Ekle</value>
+  </data>
+  <data name="Menu_AddRole" xml:space="preserve">
+    <value>Rol Ekle</value>
+  </data>
+  <data name="EditRole" xml:space="preserve">
+    <value>Rol Düzenle</value>
+  </data>
+  <data name="LeaveType" xml:space="preserve">
+    <value>İzin Tipi</value>
+  </data>
+  <data name="LeaveTypeTR" xml:space="preserve">
+    <value>İzin Tipi (TR)</value>
+  </data>
+  <data name="Menu_LeaveTypeManagement" xml:space="preserve">
+    <value>İzin Tipleri</value>
+  </data>
+  <data name="AddLeaveType" xml:space="preserve">
+    <value>İzin Tipi Ekle</value>
+  </data>
+  <data name="Menu_ManagerialLeaveEntry" xml:space="preserve">
+    <value>İdari İzin</value>
+  </data>
+  <data name="LeaveDate" xml:space="preserve">
+    <value>İzin Tarihi</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Oluştur</value>
+  </data>
+  <data name="LeaveDuration" xml:space="preserve">
+    <value>İzin Süresi</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Ek</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="Menu_Admins" xml:space="preserve">
+    <value>Uygulama Yönetimi</value>
+  </data>
+  <data name="Menu_FinancialTeam" xml:space="preserve">
+    <value>Finans Ekibi</value>
+  </data>
+  <data name="Menu_Managers" xml:space="preserve">
+    <value>Yöneticiler</value>
+  </data>
+  <data name="Menu_SecondManagers" xml:space="preserve">
+    <value>İkinci Yöneticiler</value>
+  </data>
+  <data name="Menu_SystemRoles" xml:space="preserve">
+    <value>Sistem Rolleri</value>
+  </data>
+  <data name="BetweenTwoDatesMsg" xml:space="preserve">
+    <value>İzinleri görüntülemek için iki tarih seçiniz.</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Yıl</value>
+  </data>
+  <data name="LocationIcon" xml:space="preserve">
+    <value>Konum İkonu</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Konumlar</value>
+  </data>
+  <data name="LocationTR" xml:space="preserve">
+    <value>Konum (TR)</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="AdminText" xml:space="preserve">
+    <value>Uygulama Yönetimi</value>
+  </data>
+  <data name="FinancialUserText" xml:space="preserve">
+    <value>Finans Kullanıcısı</value>
+  </data>
+  <data name="Authorization" xml:space="preserve">
+    <value>Yetkilendirme</value>
+  </data>
+  <data name="Menu_Definitions" xml:space="preserve">
+    <value>Tanımlamalar</value>
+  </data>
+  <data name="Menu_LeavePolicies" xml:space="preserve">
+    <value>İzin Politikaları</value>
+  </data>
+  <data name="LeavePolicies_LeaveDuration" xml:space="preserve">
+    <value>Kaç gün geriye dönük izin alınabilir?</value>
+  </data>
+  <data name="LeavePolicies_AllowLeaveIfZero" xml:space="preserve">
+    <value>Kaynağın izin hakkı yok ise bile izin almasına izin ver.</value>
+  </data>
+  <data name="DropdownValue_No" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="DropdownValue_Yes" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="Menu_TeamManagement" xml:space="preserve">
+    <value>Ekipler</value>
+  </data>
+  <data name="AddTeam" xml:space="preserve">
+    <value>Ekip Ekle</value>
+  </data>
+  <data name="TeamNameText" xml:space="preserve">
+    <value>Ekip Adı</value>
+  </data>
+  <data name="EditTeam" xml:space="preserve">
+    <value>Ekip Düzenle</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Ekip</value>
+  </data>
+  <data name="SelectTeam" xml:space="preserve">
+    <value>Ekip Seç</value>
+  </data>
+  <data name="LeaveAppSupport" xml:space="preserve">
+    <value>İzin App Destek</value>
+  </data>
+  <data name="Menu_LocationResponsibles" xml:space="preserve">
+    <value>Konum Sorumluları</value>
+  </data>
+  <data name="ResponsibleLocation" xml:space="preserve">
+    <value>Sorumlu Konum</value>
+  </data>
+</root>

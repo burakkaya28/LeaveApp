@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add_btn" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Add_input1" xml:space="preserve">
+    <value>Name Surname</value>
+  </data>
+  <data name="Add_input2" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Add_input3" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Add_input4" xml:space="preserve">
+    <value>Select Role</value>
+  </data>
+  <data name="Add_input5" xml:space="preserve">
+    <value>Select Manager</value>
+  </data>
+  <data name="Add_tbl_h1" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="Add_tbl_h2" xml:space="preserve">
+    <value>Manager Name</value>
+  </data>
+  <data name="Add_tbl_h3" xml:space="preserve">
+    <value>Persons</value>
+  </data>
+  <data name="ExportToExcelText" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="AllRequest_title" xml:space="preserve">
+    <value>All Leave Requests</value>
+  </data>
+  <data name="Confirmation_tbl_th1" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Default_approvals_table_th1" xml:space="preserve">
+    <value>Leave ID</value>
+  </data>
+  <data name="Default_approvals_table_th2" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="Default_approvals_table_th3" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Default_approvals_table_th4" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="Default_approvals_table_th5" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Default_copyright" xml:space="preserve">
+    <value>&lt;strong&gt;Copyright &amp;copy; 2017 &lt;a href="http://optiim.com"&gt;OPTiiM&lt;/a&gt;.&lt;/strong&gt; All rights
+    reserved.</value>
+  </data>
+  <data name="Default_homepage" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="Default_request_table_title" xml:space="preserve">
+    <value>My Leave Requests</value>
+  </data>
+  <data name="Details_input1" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Details_input2" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Details_input3" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Details_title" xml:space="preserve">
+    <value>Leave Details</value>
+  </data>
+  <data name="Login_btn" xml:space="preserve">
+    <value>Sign in with Google</value>
+  </data>
+  <data name="Login_language_en" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Login_language_en_value" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="Login_language_lbl" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Login_language_tr" xml:space="preserve">
+    <value>Turkish</value>
+  </data>
+  <data name="Login_language_tr_value" xml:space="preserve">
+    <value>tr</value>
+  </data>
+  <data name="Login_lbl" xml:space="preserve">
+    <value>Sign in to start your session</value>
+  </data>
+  <data name="Login_title" xml:space="preserve">
+    <value>OPTiiM İzinApp</value>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Menu_all" xml:space="preserve">
+    <value>All Leaves</value>
+  </data>
+  <data name="Menu_approvals" xml:space="preserve">
+    <value>Pending Approvals</value>
+  </data>
+  <data name="Menu_dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Menu_reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Menu_reports_li1" xml:space="preserve">
+    <value>Approved Leaves</value>
+  </data>
+  <data name="Menu_reports_li2" xml:space="preserve">
+    <value>Rejected Leaves</value>
+  </data>
+  <data name="Menu_reports_li3" xml:space="preserve">
+    <value>Person Based Leaves</value>
+  </data>
+  <data name="Menu_reports_li4" xml:space="preserve">
+    <value>Leaves Between Dates</value>
+  </data>
+  <data name="Menu_request" xml:space="preserve">
+    <value>Leave Request</value>
+  </data>
+  <data name="Menu_staff" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="Report_tbl_th1" xml:space="preserve">
+    <value>Total Leaves</value>
+  </data>
+  <data name="Report_tbl_th2" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Report_title" xml:space="preserve">
+    <value>Person Based Total Leave Requests</value>
+  </data>
+  <data name="Request_btn" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Request_drop" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Request_drop1" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+  <data name="Request_drop2" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Request_file" xml:space="preserve">
+    <value>Add File</value>
+  </data>
+  <data name="Request_form_title" xml:space="preserve">
+    <value>Leave Request Form</value>
+  </data>
+  <data name="Request_href1" xml:space="preserve">
+    <value>Add Half Day</value>
+  </data>
+  <data name="Request_href2" xml:space="preserve">
+    <value>Add Report</value>
+  </data>
+  <data name="Request_input1" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="Request_input2" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Request_input3" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Request_input4" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="Request_lbl" xml:space="preserve">
+    <value>Leave Description</value>
+  </data>
+  <data name="Request_msj" xml:space="preserve">
+    <value>Annual Leave Undertaking</value>
+  </data>
+  <data name="Request_msj1" xml:space="preserve">
+    <value>&lt;p&gt;
+                                                    To Optiim Software Services / Optiim Business Solutions
+
+I want to use leave for  --- days based on my annual leave which is not beyond to me yet between ----- and ----- dates. I consent that not paying money of my advance leave days to me in case of ending of business contract in any reason.
+
+&lt;/p&gt;</value>
+  </data>
+  <data name="Request_msj2" xml:space="preserve">
+    <value>Read the contract.</value>
+  </data>
+  <data name="Request_msj3" xml:space="preserve">
+    <value>I have read, I accept.</value>
+  </data>
+  <data name="Request_tbl_td1" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Request_tbl_td2" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="Request_tbl_td3" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="Request_tbl_td4" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="TwoDates_btn" xml:space="preserve">
+    <value>Show Leaves</value>
+  </data>
+  <data name="TwoDates_title" xml:space="preserve">
+    <value>Leaves Between Dates</value>
+  </data>
+  <data name="UserEdit_input" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UserEdit_input1" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="UserEdit_input2" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="UserEdit_msj" xml:space="preserve">
+    <value>Edit User</value>
+  </data>
+  <data name="Add_input6" xml:space="preserve">
+    <value>Select Second Manager</value>
+  </data>
+  <data name="UserEdit_input3" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="UserEdit_input4" xml:space="preserve">
+    <value>Second Manager</value>
+  </data>
+  <data name="UserEdit_input5" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Request_input5" xml:space="preserve">
+    <value>Leave Type</value>
+  </data>
+  <data name="Default_leave_table_th1" xml:space="preserve">
+    <value>User Id</value>
+  </data>
+  <data name="Default_leave_table_th2" xml:space="preserve">
+    <value>Work Year</value>
+  </data>
+  <data name="Default_leave_table_th3" xml:space="preserve">
+    <value>Total Leave Right</value>
+  </data>
+  <data name="Default_leave_table_th4" xml:space="preserve">
+    <value>Total Used Leave</value>
+  </data>
+  <data name="Default_leave_table_th5" xml:space="preserve">
+    <value>Total Leave Left</value>
+  </data>
+  <data name="Default_leave_table_th6" xml:space="preserve">
+    <value>My Leave Status</value>
+  </data>
+  <data name="Default_leave_table_th7" xml:space="preserve">
+    <value>Leave Summary</value>
+  </data>
+  <data name="Request_lbl1" xml:space="preserve">
+    <value>Leave Duration (Day)</value>
+  </data>
+  <data name="Request_lbl2" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Request_chkbox" xml:space="preserve">
+    <value>Add half day to selected leave.</value>
+  </data>
+  <data name="Request_chkbox1" xml:space="preserve">
+    <value>It provides take half day leave.</value>
+  </data>
+  <data name="Request_href3" xml:space="preserve">
+    <value>Half Day</value>
+  </data>
+  <data name="Menu_management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="Default_approvals_table_th6" xml:space="preserve">
+    <value>Waiting Approver</value>
+  </data>
+  <data name="Default_approvals_table_th7" xml:space="preserve">
+    <value>Approval Level</value>
+  </data>
+  <data name="Add_tbl_h4" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Add_tbl_h5" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="Default_leave_table_WorkStartDate" xml:space="preserve">
+    <value>Work Start Date</value>
+  </data>
+  <data name="PendingApprovalHasData" xml:space="preserve">
+    <value>No leave to be approved.</value>
+  </data>
+  <data name="myLeaveHasData" xml:space="preserve">
+    <value>No leave to display.</value>
+  </data>
+  <data name="Menu_UserManagement" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="LeaveDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="UserActivate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="ManagerText" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="RoleText" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="SecondManagerText" xml:space="preserve">
+    <value>Second Manager</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="UserStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Menu_RoleManagement" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>Add Role</value>
+  </data>
+  <data name="Menu_AddRole" xml:space="preserve">
+    <value>Add Role</value>
+  </data>
+  <data name="EditRole" xml:space="preserve">
+    <value>Edit Role</value>
+  </data>
+  <data name="LeaveType" xml:space="preserve">
+    <value>Leave Type</value>
+  </data>
+  <data name="LeaveTypeTR" xml:space="preserve">
+    <value>Leave Type (TR)</value>
+  </data>
+  <data name="Menu_LeaveTypeManagement" xml:space="preserve">
+    <value>Leave Types</value>
+  </data>
+  <data name="AddLeaveType" xml:space="preserve">
+    <value>Add Leave Type</value>
+  </data>
+  <data name="Menu_ManagerialLeaveEntry" xml:space="preserve">
+    <value>Managerial Leave</value>
+  </data>
+  <data name="LeaveDate" xml:space="preserve">
+    <value>Leave Date</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="LeaveDuration" xml:space="preserve">
+    <value>Leave Duration</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Menu_Admins" xml:space="preserve">
+    <value>Admins</value>
+  </data>
+  <data name="Menu_FinancialTeam" xml:space="preserve">
+    <value>Financial Team</value>
+  </data>
+  <data name="Menu_Managers" xml:space="preserve">
+    <value>Managers</value>
+  </data>
+  <data name="Menu_SecondManagers" xml:space="preserve">
+    <value>Second Managers</value>
+  </data>
+  <data name="Menu_SystemRoles" xml:space="preserve">
+    <value>System Roles</value>
+  </data>
+  <data name="BetweenTwoDatesMsg" xml:space="preserve">
+    <value>Select two dates to view leaves</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="LocationIcon" xml:space="preserve">
+    <value>Location Icon</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="LocationTR" xml:space="preserve">
+    <value>Location (TR)</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="AdminText" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="FinancialUserText" xml:space="preserve">
+    <value>Financial User</value>
+  </data>
+  <data name="Authorization" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="Menu_Definitions" xml:space="preserve">
+    <value>Definitions</value>
+  </data>
+  <data name="Menu_LeavePolicies" xml:space="preserve">
+    <value>Leave Policies</value>
+  </data>
+  <data name="LeavePolicies_LeaveDuration" xml:space="preserve">
+    <value>How many days can be get leave before?</value>
+  </data>
+  <data name="LeavePolicies_AllowLeaveIfZero" xml:space="preserve">
+    <value>Allow get leave even resource has not got any leave right.</value>
+  </data>
+  <data name="DropdownValue_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="DropdownValue_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Menu_TeamManagement" xml:space="preserve">
+    <value>Teams</value>
+  </data>
+  <data name="AddTeam" xml:space="preserve">
+    <value>Add Team</value>
+  </data>
+  <data name="TeamNameText" xml:space="preserve">
+    <value>Team Name</value>
+  </data>
+  <data name="EditTeam" xml:space="preserve">
+    <value>Edit Team</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="SelectTeam" xml:space="preserve">
+    <value>Select Team</value>
+  </data>
+  <data name="LeaveAppSupport" xml:space="preserve">
+    <value>Leave App Support</value>
+  </data>
+  <data name="Menu_LocationResponsibles" xml:space="preserve">
+    <value>Location Responsibles</value>
+  </data>
+  <data name="ResponsibleLocation" xml:space="preserve">
+    <value>Responsible Location</value>
+  </data>
+</root>
